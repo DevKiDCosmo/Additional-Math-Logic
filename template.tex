@@ -1,0 +1,105 @@
+%% template.tex
+%% Copyright 2024 Antonio López Rivera
+%
+% LaTeX template for the 2024 International Astronautical Congress 
+% of the International Astronautical Federation (IAF). This template
+% has been written based on the official IAC 2024 Microsoft Word 
+% conference paper template, which can be found here:
+%   https://www.iafastro.org/assets/files/events/iac/2024/IAC%202024%20Manuscript_Template.doc
+%
+%%%%%%%%%%%%%%%%
+
+\documentclass{iac}
+
+\usepackage{aml}
+
+\begin{document}
+
+\IAClocation{Frankfurt am Main, Germany}
+\IACdates{Novembre 15th}
+\IACyear{2024}
+\IACpapernumber{AML-v1b}
+\IACcopyright{2024}{Duy Nam Schlitz}
+
+\title{Astern: Code Transfiguration to Deeper Layer : Codetranformation zu tieferen Schichten}
+
+\IACauthor*{Duy Nam Schlitz}{A young boy who wants more.}{duynamschlitzbusiness@gmail.com}
+
+\abstract{11 additional symbols are included in the AML package version 1 in an effort to increase the number of mathematical notations that are available. These symbols are meant to be accepted and used in upcoming official releases, even though they are not yet formally standardized. The AML package aims to improve the expressiveness and clarity of mathematical expressions by offering distinctive, user-friendly symbols.}
+
+\maketitle
+
+\section*{Introduction to AML and all CMD}
+
+\begin{itemize}
+    \item The custom symbol for "if" is $\ifL$
+    \item The custom symbol for "else if" is $\elifL$
+    \item The custom symbol for "else" is $\elseL$
+    \item The custom symbol for "to" is $\toL$
+    \item The custom symbol for "also" is $\alsoL$
+    \item The custom symbol for "additional Content" is $\additionalcontent$
+    \item The custom symbol for "done" is $\doneL$
+    \item The custom symbol for "equal to statement" is $\logicalEquL$
+    \item The custom symbol for "true" is $\trueL$
+    \item The custom symbol for "false" is $\falseL$
+    \item The custom symbol for "undefined" is $\undefinedL$
+\end{itemize}
+
+\section{Example}
+
+$$ \ifL (\forall x \in \mathbb{N}, \exists y \in \mathbb{C}, k\not= 0) : (x + yk) = 0 \elseL x + yk \not= 0 \doneL$$
+$$ \logicalEquL \ifL (k = 0) : (x + ky \not= 0) \elseL x + ky = 0 \doneL $$
+
+\section{How to use}
+
+\subsection{Basic Usage with Conditional Logic}
+
+The custom "if" symbol is used as follows: $\ifL (x > 0)$. 
+If the condition is not met, you can use the "else" symbol: $\elseL (x \leq 0)$.
+For a more complex condition, use the "else if" symbol: $\elifL (x = 0)$.
+
+\subsection{Using the "To" and "Also" Symbols}
+
+Given that $x = 5$, the next step is to apply the "to" symbol: $\toL f(x)$.
+Additionally, we introduce the "also" symbol to represent a follow-up statement: 
+$\alsoL g(x) = x^2$.
+
+\subsection{Complex Expressions Involving Multiple Symbols:}
+
+For all $x \in \mathbb{N}$, if $x$ is positive, then $\ifL x > 0 \toL \text{True}$, 
+otherwise $\elseL x \leq 0 \toL \text{False}$.
+If $x = 0$, we apply $\elifL x = 0 \toL \text{Undefined}$.
+
+In completely mathematical vision:
+
+$$ \mathbb{N} \logicalEquL \ifL (\forall x \in \mathbb{N} : x > 0) \toL \trueL \elifL (x = 0) \toL \undefinedL \elseL (x \leq 0) \toL \falseL \doneL. $$
+
+\subsection{Using the "True" and "False" Symbols}
+
+In logical operations, the "true" symbol is denoted by $\trueL$, while the "false" symbol is denoted by $\falseL$:
+$$\ifL (x > 0) \toL \trueL \quad \elseL (x \leq 0) \toL \falseL$$
+
+\subsection{"Additional Content" Symbol in Context}
+
+If the value of $x$ meets the condition, we add some additional content using the "additional content" symbol: 
+$\additionalcontent \quad x' = 2x$.
+
+\subsection{End Symbol Usage}
+
+When the process is complete, we mark it as done with the "done" symbol: 
+$\doneL$.
+
+\subsection{Using Logical Equivalence}
+
+If the equation holds true for both sides, we use the "equalize to" symbol: 
+$\logicalEquL (x = y) \toL f(x) = f(y)$.
+
+\subsection{Combining Multiple Symbols in a Complex Statement}
+
+$$
+    \ifL (a > b) \toL f(a) > f(b) \quad 
+    \elifL (a = b) \toL f(a) = f(b) \quad 
+    \elseL \toL \undefinedL
+$$
+
+\end{document}

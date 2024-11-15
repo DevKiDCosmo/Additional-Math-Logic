@@ -1,0 +1,176 @@
+\ProvidesPackage{aml}[2024/11/15 Additional L Symbols Package by Duy Nam Schlitz]
+
+% Additional Math Ls
+
+\RequirePackage{tikz}
+\RequirePackage{amsmath}
+
+\newcommand{\ifL}{
+    \mathbin{
+        \begin{tikzpicture}[baseline=-0.5ex, line width=0.4pt]
+            \useasboundingbox (-0.4em, -0.2em) rectangle (0.8em, 0.5em);
+            % Horizontal line
+            \draw (-0.3em, 0.1em) -- (0.7em, 0.1em); 
+            % Vertical line 1
+            \draw (0em, -0.2em) -- (0em, 0.4em);
+            % Vertical line 2
+            \draw (0.4em, -0.2em) -- (0.4em, 0.4em);
+        \end{tikzpicture}
+    }
+}
+
+\newcommand{\elseL}{
+    \mathbin{
+        \begin{tikzpicture}[baseline=-0.5ex, line width=0.4pt]
+            \useasboundingbox (-0.2em, -0.3em) rectangle (0.6em, 0.5em);
+            % Horizontal line
+            \draw (-0.1em, 0.3em) -- (0.5em, 0.3em); 
+            \draw (-0.1em, 0.4em) -- (0.5em, 0.4em); 
+            % Vertical line 1
+            \draw (0.2em, -0.2em) -- (0.2em, 0.4em);
+        \end{tikzpicture}
+    }
+}
+
+\newcommand{\elifL}{
+    \mathbin{
+        \begin{tikzpicture}[baseline=-0.5ex, line width=0.4pt]
+            \useasboundingbox (-0.4em, -0.3em) rectangle (0.8em, 0.5em);
+            % Horizontal line
+            \draw (-0.3em, 0.1em) -- (0.7em, 0.1em);
+            % Horizontal line 2
+            \draw (0em, 0.4em) -- (0.4em, 0.4em);
+            % Horizontal line 3
+            \draw (0em, 0.25em) -- (0.4em, 0.25em);
+            % Vertical line 1
+            \draw (0em, -0.2em) -- (0em, 0.4em);
+            % Vertical line 2
+            \draw (0.4em, -0.2em) -- (0.4em, 0.4em);
+        \end{tikzpicture}
+    }
+}
+
+\newcommand{\toL}{
+    \mathbin{
+        \begin{tikzpicture}[baseline=-0.5ex, line width=0.4pt]
+            \useasboundingbox (-0.5em, -0.4em) rectangle (0.9em, 0.6em);
+            % Horizontal line
+            \draw (-0.3em, 0.1em) -- (0.7em, 0.1em);
+            % Diagonal line 1
+            \draw (0.7em, 0.1em) -- (0.4em, 0.4em);
+            % Diagonal line 2
+            \draw (0.7em, 0.1em) -- (0.4em, -0.2em);
+            % Diagonal line 2.1
+            \draw (0.6em, 0.1em) -- (0.3em, 0.4em);
+            % Diagonal line 2.2
+            \draw (0.6em, 0.1em) -- (0.3em, -0.2em);
+        \end{tikzpicture}
+    }
+}
+
+\newcommand{\alsoL}{
+    \mathbin{
+        \vphantom{+} % Keeps vertical alignment consistent
+        \begin{tikzpicture}[baseline=-0.7ex]
+            \useasboundingbox (-0.5em, -0.5em) rectangle (0.5em, 0.5em);
+            % Draw a 45° rotated square
+            \draw[rotate=45] (-0.3em, -0.3em) rectangle (0.3em, 0.3em);
+        \end{tikzpicture}
+    }
+}
+
+\newcommand{\additionalcontent}{
+    \mathbin{
+        \begin{tikzpicture}[baseline=-0.5ex, line width=0.4pt]
+            \useasboundingbox (-0.5em, -0.4em) rectangle (0.9em, 0.6em);
+            % Horizontal line
+            \draw (-0.3em, 0.1em) -- (0.7em, 0.1em);
+
+            % Horizontal line
+            \draw (-0.3em, 0.2em) -- (0.5em, 0.2em);
+            % Horizontal line
+            \draw (-0.3em, 0.0em) -- (0.5em, 0.0em);
+            
+            % Diagonal line 1
+            \draw (0.7em, 0.1em) -- (0.4em, 0.4em);
+            % Diagonal line 2
+            \draw (0.7em, 0.1em) -- (0.4em, -0.2em);
+            % Diagonal line 2.1
+            \draw (0.6em, 0.1em) -- (0.3em, 0.4em);
+            % Diagonal line 2.2
+            \draw (0.6em, 0.1em) -- (0.3em, -0.2em);
+        \end{tikzpicture}
+    }
+}
+
+\newcommand{\doneL}{
+    \mathbin{
+        \vphantom{+} % Keeps vertical alignment consistent
+        \begin{tikzpicture}[baseline=-0.7ex]
+            \useasboundingbox (-0.5em, -0.5em) rectangle (0.5em, 0.5em);
+            % Draw the square
+            \draw (-0.3em, -0.3em) rectangle (0.3em, 0.3em);
+            % Draw the "X" inside the square
+            \draw (-0.3em, -0.3em) -- (0.3em, 0.3em);
+            \draw (-0.3em, 0.3em) -- (0.3em, -0.3em);
+        \end{tikzpicture}
+    }
+}
+
+\newcommand{\logicalEquL}{
+    \mathbin{
+        \begin{tikzpicture}[baseline=-0.5ex, line width=0.4pt]
+            \useasboundingbox (-0.5em, -0.4em) rectangle (0.9em, 0.6em);
+            % Horizontal line
+            \draw (-0.3em, 0.1em) -- (0.7em, 0.1em);
+
+            % Diagonal line 1
+            \draw (0.7em, 0.1em) -- (0.4em, 0.4em);
+            % Diagonal line 2
+            \draw (0.7em, 0.1em) -- (0.4em, -0.2em);
+            % Diagonal line 2.1
+            \draw (-0.3em, 0.1em) -- (0em, 0.4em);
+            % Diagonal line 2.2
+            \draw (-0.3em, 0.1em) -- (0em, -0.2em);
+
+            \draw (0.2em, -0.2em) -- (0.2em, 0.4em);
+        \end{tikzpicture}
+    }
+}
+
+\newcommand{\falseL}{
+    \mathbin{
+        \begin{tikzpicture}[baseline=-0.5ex, line width=0.4pt]
+            \useasboundingbox (-0.2em, -0.3em) rectangle (0.6em, 0.5em);
+            % Horizontal line
+            \draw (-0.1em, 0.4em) -- (0.5em, 0.4em); 
+            % Vertical line 1
+            \draw (0.2em, -0.2em) -- (0.2em, 0.4em);
+        \end{tikzpicture}
+    }
+}
+
+\newcommand{\trueL}{
+    \mathbin{
+        \begin{tikzpicture}[baseline=-0.5ex, line width=0.4pt]
+            \useasboundingbox (-0.2em, -0.3em) rectangle (0.6em, 0.5em);
+            % Horizontal line
+            \draw (-0.1em, -0.2em) -- (0.5em, -0.2em); 
+            \draw (-0.1em, -0.1em) -- (0.5em, -0.1em); 
+            % Vertical line 1
+            \draw (0.2em, -0.2em) -- (0.2em, 0.4em);
+        \end{tikzpicture}
+    }
+}
+
+\newcommand{\undefinedL}{
+    \mathbin{
+        \begin{tikzpicture}[baseline=-0.5ex, line width=0.4pt]
+            \useasboundingbox (-0.2em, -0.3em) rectangle (0.6em, 0.5em);
+            % Horizontal line
+            \draw (-0.1em, -0.2em) -- (0.5em, -0.2em); 
+            \draw (0.1em, -0.2em) -- (0.1em, 0.4em);
+            \draw (0.3em, -0.2em) -- (0.3em, 0.4em);
+        \end{tikzpicture}
+    }
+}
