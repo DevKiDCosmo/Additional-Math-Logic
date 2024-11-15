@@ -1,6 +1,6 @@
 # AML (Advanced Mathematical Logic) Package - Version 1.0 Released
 
-We are excited to announce the release of the **AML (Advanced Mathematical Logic)** package, now available on CTAN. This package provides a set of **10 custom symbols** for advanced mathematical logic, useful for typesetting complex logical expressions and formulas.
+We are excited to announce the release of the **AML (Advanced Mathematical Logic)** package, now available on CTAN. This package provides a set of **11 custom symbols** for advanced mathematical logic, useful for typesetting complex logical expressions and formulas.
 
 ### Key Features:
 - **Custom Symbols**: The AML package defines the following new logic symbols for use in mathematical typesetting:
@@ -14,6 +14,7 @@ We are excited to announce the release of the **AML (Advanced Mathematical Logic
   - `$\logicalEquL$` - Custom "from that before is equalize to" symbol
   - `$\trueL$` - Custom "true" symbol
   - `$\falseL$` - Custom "false" symbol
+  - `$\undefinedL$` - Custom "undefined" symbol
 
 - **Designed for Logic Notation**: These symbols are tailored for logical expressions, making it easier to format complex algorithms or proofs in LaTeX.
 
