@@ -1,0 +1,86 @@
+% \iffalse
+% This is file 'aml.dtx'
+% Documentation and source code for the AML package.
+% Version v1b
+% (c) 2024 Duy Nam Schlitz
+% License: GNU General Public License (GPL)
+% \fi
+
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{aml}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\title{AML Package Documentation}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+The AML (Advanced Mathematical Logic) package provides a set of custom symbols for logic operations, which are useful for typesetting complex mathematical expressions. The package defines the following symbols:
+
+\begin{itemize}
+    \item $\ifL$ - The custom "if" symbol
+    \item $\elseL$ - The custom "else" symbol
+    \item $\elifL$ - The custom "else if" symbol
+    \item $\toL$ - The custom "to" symbol
+    \item $\alsoL$ - The custom "also" symbol
+    \item $\additionalcontent$ - The custom "additional content" symbol
+    \item $\doneL$ - The custom "done/end" symbol
+    \item $\logicalEquL$ - The custom "from that before is equalize to" symbol
+    \item $\trueL$ - The custom "true" symbol
+    \item $\falseL$ - The custom "false" symbol
+\end{itemize}
+
+\section{Installation Instructions}
+
+To install the AML package, follow these steps:
+
+1. Download the package files.
+2. Run the following commands to extract the package:
+
+\begin{verbatim}
+latex aml.ins
+\end{verbatim}
+
+3. This will generate the file \texttt{aml.sty}.
+4. Place the \texttt{aml.sty} file in your LaTeX directory, such as \texttt{texmf/tex/latex/} or the current directory of your LaTeX project.
+
+\section{Usage Example}
+
+To use the symbols from the AML package, include the following line in the preamble of your LaTeX document:
+
+\begin{verbatim}
+\usepackage{aml}
+\end{verbatim}
+
+Then, you can use the custom symbols in your document. Here’s an example of their usage:
+
+\begin{verbatim}
+\ifL (\forall x \in \mathbb{N}, \exists y \in \mathbb{C}) : f(x) \leftrightarrow f'(y) \toL \alsoL (x' = y) \elifL (f(x) \ge f'(y)) \toL (x \ge y + x) \elseL \toL x \not= y
+\end{verbatim}
+
+This will produce:
+
+\[
+\ifL (\forall x \in \mathbb{N}, \exists y \in \mathbb{C}) : f(x) \leftrightarrow f'(y) \toL \alsoL (x' = y) \elifL (f(x) \ge f'(y)) \toL (x \ge y + x) \elseL \toL x \not= y
+\]
+
+\section{License}
+
+This package is released under the **GNU General Public License (GPL)**. You can freely use, modify, and distribute it, but any modified versions must also be licensed under the GPL.
+
+The GPL allows you to:
+- **Use** the software for any purpose.
+- **Study** how the software works, and adapt it to your needs.
+- **Distribute** copies of the software.
+- **Distribute** modified versions of the software, with the same freedoms for others.
+
+For more information about the GPL, see the [GNU website](https://www.gnu.org/licenses/).
+
+\end{document}
+
+% End of aml.dtx file
